@@ -1,0 +1,41 @@
+{
+   "spends": [
+      {
+         "for": "ramoji on 21st",
+         "paid_by": "navin",
+         "split_between": [
+            "prateek",
+            "sudeep"
+         ],
+         "split": "equally",
+         "spent": 1200,
+         "comment": "spent contains the total amount that includes taxes too"
+      },
+      {
+         "for": "Mcd on 22nd",
+         "paid_by": "prateek",
+         "split": "notequal",
+         "tax": 12,
+         "seperate_spends": {
+            "prateek": 300,
+            "sudeep": 600,
+            "sai": 150
+         },
+         "spent": 1200,
+         "comment": "the seperate_spends+tax should be equal to `spent` else it will put out an error. It means the seperate_spends spends are cost without tax as its common in India reciept bills"
+      },
+      {
+         "for": "Mcd on 23nd",
+         "paid_by": "prateek",
+         "split": "notequal",
+         "tax": 10,
+         "seperate_spends": {
+            "prateek": 300,
+            "sudeep": 600,
+            "sai": 200
+         },
+         "spent": 1210,
+         "comment": "the seperate_spends+tax should be equal to `spent` else it will put out an error. It means the seperate_spends spends are cost without tax as its common in India reciept bills"
+      }
+   ]
+}
