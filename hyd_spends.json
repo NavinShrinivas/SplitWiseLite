@@ -117,6 +117,42 @@
             "navin"
          ],
          "spent": 273
+      },
+      {
+         "for": "Saturday night briyani",
+         "paid_by": "navin",
+         "split": "equally",
+         "split_between": [
+            "prateek",
+            "sudeep",
+            "sai",
+            "navin"
+         ],
+         "spent": 932
+      },
+      {
+         "for": "Cab sunday night to bus",
+         "paid_by": "sai",
+         "split": "equally",
+         "split_between": [
+            "prateek",
+            "sudeep",
+            "navin"
+         ],
+         "spent": 160
+      },
+      {
+         "for": "Sunday evening instamart",
+         "paid_by": "sai",
+         "split": "notequal",
+         "tax": 0,
+         "seperate_spends": {
+            "sai" : 70,
+            "prateek": 100,
+            "navin": 126,
+            "sudeep": 15
+         },
+         "spent": 318
       }
    ]
 }
