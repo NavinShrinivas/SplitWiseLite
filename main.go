@@ -32,9 +32,9 @@ func main() {
 		)
 	})
 	v1_grp := r.Group("/api/v1")
-   {
-	   V1_Routes(v1_grp)
-   }
+	{
+		V1_Routes(v1_grp)
+	}
 
 	s := &http.Server{
 		Addr:         ":" + os.Getenv("PORT"),
