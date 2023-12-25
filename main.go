@@ -20,8 +20,13 @@ func split_equal(paid_by string, split_between []interface{}, amount float64) {
 		owes[paid_by] = make(map[string]float64)
 	}
 	for _, v := range split_between {
+		if v.(string) == paid_by {
+			continue
+		}
 		owes[paid_by][v.(string)] += split_amt
+		fmt.Println("\t With tax ", v.(string), "owes", paid_by, split_amt, "for this spend")
 	}
+	fmt.Println("\t Total amount :", amount)
 }
 
 func split_unequal(paid_by string, owed_non_tax_array map[string]interface{}, tax float64, total_amount float64) (float64, error) {
@@ -31,7 +36,12 @@ func split_unequal(paid_by string, owed_non_tax_array map[string]interface{}, ta
 		owes[paid_by] = make(map[string]float64)
 	}
 	for k, v := range owed_non_tax_array {
+		if paid_by == k {
+			calc_tot += (v.(float64) + ((v.(float64) * tax) / 100))
+			continue
+		}
 		calc_tot += (v.(float64) + ((v.(float64) * tax) / 100))
+		fmt.Println("\t With tax ", k, "owes", paid_by, (v.(float64) + ((v.(float64) * tax) / 100)), "for this spend")
 		owes[paid_by][k] += (v.(float64) + ((v.(float64) * tax) / 100))
 	}
 	if calc_tot != total_amount {
@@ -61,7 +71,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-   currency := "inr"
+	currency := "inr"
 	spends_obj = temp["spends"].([]interface{}) // Should return back the array of spends
 	for _, v := range spends_obj {
 		spend := v.(map[string]interface{})
@@ -73,17 +83,12 @@ func main() {
 			split_between := spend["split_between"].([]interface{})
 			amount := spend["spent"].(float64)
 			paid_by := spend["paid_by"].(string)
-         fmt.Println("\t Split between : ", split_between)
-         fmt.Println("\t Total amount : ", amount)
-         fmt.Println("\t paid by : ", paid_by)
 			split_equal(paid_by, split_between, amount)
 		} else {
 			amount := spend["spent"].(float64)
 			paid_by := spend["paid_by"].(string)
 			owed_non_tax_array := spend["seperate_spends"].(map[string]interface{})
 			tax := spend["tax"].(float64)
-         fmt.Println("\t Total amount : ", amount)
-         fmt.Println("\t paid by : ", paid_by)
 			diff, err := split_unequal(paid_by, owed_non_tax_array, tax, amount)
 			if err != nil {
 				fmt.Println("\t WARN :", err)
@@ -95,11 +100,11 @@ func main() {
 	// Calculating owed delta for displaying, only positive deltas are required
 	for owed, inner := range owes {
 		for ower, value := range inner {
-			delta := value - owes[ower][owed] 
+			delta := value - owes[ower][owed]
 			if delta <= 0 {
 				continue
 			} else {
-				fmt.Println(ower, "owes", owed, delta,currency)
+				fmt.Println(ower, "owes", owed, delta, currency)
 			}
 		}
 	}

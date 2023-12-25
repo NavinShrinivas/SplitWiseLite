@@ -1,0 +1,122 @@
+{
+   "spends": [
+      {
+         "for": "bus from hyd to blr",
+         "paid_by": "navin",
+         "split": "notequal",
+         "tax": 0,
+         "seperate_spends": {
+            "prateek": 1950,
+            "sudeep": 1950,
+            "navin": 2200
+         },
+         "spent": 6100
+      },
+      {
+         "for": "cab from kacheguda to fresh living",
+         "paid_by": "navin",
+         "split_between": [
+            "prateek",
+            "sudeep",
+            "navin"
+         ],
+         "split": "equally",
+         "spent": 400
+      },
+      {
+         "for": "Friday lunch Naatu",
+         "paid_by": "sai",
+         "split": "equally",
+         "split_between": [
+            "prateek",
+            "sudeep",
+            "sai",
+            "navin"
+         ],
+         "spent": 1970
+      },
+      {
+         "for": "metro travel to and from Naatu on friday",
+         "paid_by": "sai",
+         "split": "equally",
+         "split_between": [
+            "prateek",
+            "sudeep",
+            "sai",
+            "navin"
+         ],
+         "spent": 120
+      },
+      {
+         "for": "cream stone",
+         "paid_by": "navin",
+         "split": "notequal",
+         "tax": 18,
+         "seperate_spends": {
+            "prateek": 140,
+            "navin": 110,
+            "sudeep": 150
+         },
+         "spent": 472
+      },
+      {
+         "for": "cab to flipside",
+         "paid_by": "sai",
+         "split": "equally",
+         "split_between": [
+            "prateek",
+            "sudeep",
+            "sai",
+            "navin"
+         ],
+         "spent": 280
+      },
+      {
+         "for": "ANTHM food",
+         "paid_by": "navin",
+         "split": "equally",
+         "split_between": [
+            "prateek",
+            "sudeep",
+            "sai",
+            "navin"
+         ],
+         "spent": 2144
+      },
+      {
+         "for": "go karting",
+         "paid_by": "sai",
+         "split": "equally",
+         "split_between": [
+            "prateek",
+            "sudeep",
+            "sai",
+            "navin"
+         ],
+         "spent": 1180
+      },
+      {
+         "for": "flipside food",
+         "paid_by": "navin",
+         "split": "notequal",
+         "tax": 5,
+         "seperate_spends": {
+            "prateek": 219,
+            "navin": 239
+         },
+         "spent": 481
+      },
+      {
+         "for": "cab from flipside",
+         "paid_by": "sai",
+         "split": "equally",
+         "split_between": [
+            "prateek",
+            "sudeep",
+            "sai",
+            "navin"
+         ],
+         "spent": 273
+      }
+   ]
+}
