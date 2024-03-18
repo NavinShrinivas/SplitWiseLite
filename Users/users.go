@@ -1,7 +1,6 @@
-package users
+package Users
 
 import (
-
 	"github.com/gin-gonic/gin"
 )
 
