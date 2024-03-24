@@ -71,7 +71,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	currency := "inr"
+	currency := temp["currency"].(string)
 	spends_obj = temp["spends"].([]interface{}) // Should return back the array of spends
 	for _, v := range spends_obj {
 		spend := v.(map[string]interface{})

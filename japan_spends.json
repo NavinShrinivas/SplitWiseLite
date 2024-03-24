@@ -1,0 +1,183 @@
+{
+   "currency" : "jpy",
+   "spends": [
+      {
+         "for": "Sim card",
+         "paid_by": "ayaan",
+         "split_between": [
+            "ayaan",
+            "navin",
+            "rowjee"
+         ],
+         "split": "equally",
+         "spent": 3000
+      },
+      {
+         "for": "pasmo card",
+         "paid_by": "navin",
+         "split_between": [
+            "ayaan",
+            "navin",
+            "rowjee"
+         ],
+         "split": "equally",
+         "spent": 4500
+      },
+      {
+         "for": "15th water",
+         "paid_by": "navin",
+         "split_between": [
+            "ayaan",
+            "navin",
+            "rowjee"
+         ],
+         "split": "equally",
+         "spent": 200
+      },
+      {
+         "for": "16th nanachiki",
+         "paid_by": "navin",
+         "split_between": [
+            "ayaan",
+            "navin"
+         ],
+         "split": "equally",
+         "spent": 480
+      },
+      {
+         "for": "16th lunch",
+         "paid_by": "rowjee",
+         "split_between": [
+            "rowjee",
+            "ayaan",
+            "navin"
+         ],
+         "split": "equally",
+         "spent": 2850
+      },
+      {
+         "for": "16th yamada store gifts (pokemon and stuff)",
+         "paid_by": "navin",
+         "split_between": [
+            "rowjee"
+         ],
+         "split": "equally",
+         "spent": 1200
+      },
+      {
+         "for": "16th tayaki afternoon",
+         "paid_by": "navin",
+         "split_between": [
+            "navin",
+            "rowjee"
+         ],
+         "split": "equally",
+         "spent": 570
+      },
+      {
+         "for": "16th Drinks in shibuya",
+         "paid_by": "navin",
+         "split_between": [
+            "navin",
+            "ayaan",
+            "rowjee"
+         ],
+         "split": "equally",
+         "spent": 278
+      },
+      {
+         "for": "17th night cheese coin",
+         "paid_by": "ayaan",
+         "split_between": [
+            "navin",
+            "ayaan",
+            "rowjee"
+         ],
+         "split": "equally",
+         "spent": 500
+      },
+      {
+         "for": "17th night water and haribo",
+         "paid_by": "navin",
+         "split_between": [
+            "navin",
+            "ayaan",
+            "rowjee"
+         ],
+         "split": "equally",
+         "spent": 425
+      },
+      {
+         "for": "18th rowjee and ayaan only lunch", 
+         "paid_by": "ayaan",
+         "split_between": [
+            "ayaan",
+            "rowjee"
+         ],
+         "split": "equally",
+         "spent": 1100
+      },
+      {
+         "for": "Coco curry lunch 19th",
+         "paid_by": "ayaan",
+         "split": "notequal",
+         "tax": 0,
+         "seperate_spends": {
+            "navin": 555,
+            "ayaan": 949,
+            "rowjee": 879
+         },
+         "spent": 2383
+      },
+      {
+         "for": "19th daiso rowjee cash",
+         "paid_by": "navin",
+         "split_between": [
+            "rowjee"
+         ],
+         "split": "equally",
+         "spent": 540
+      },
+      {
+         "for": "19th night dinner with sriram",
+         "paid_by": "navin",
+         "split_between": [
+            "navin",
+            "ayaan",
+            "rowjee"
+         ],
+         "split": "equally",
+         "spent": 3100
+      },
+      {
+         "for": "Mega store 11k purchase",
+         "paid_by": "ayaan",
+         "split": "notequal",
+         "tax": 0,
+         "seperate_spends": {
+            "navin": 3227,
+            "ayaan": 2357,
+            "rowjee": 4917
+         },
+         "spent": 11214
+      },
+      {
+         "for": "20th airport ayaan chocolates including forex",
+         "paid_by": "navin",
+         "split_between": [
+            "ayaan"
+         ],
+         "split": "equally",
+         "spent": 950
+      },
+      {
+         "for": "20th airport ayaan matche including forex",
+         "paid_by": "rowjee",
+         "split_between": [
+            "ayaan"
+         ],
+         "split": "equally",
+         "spent": 830
+      }
+   ]
+}
